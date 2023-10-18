@@ -1,0 +1,201 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    overflow-y: 100%;
+    
+}
+.hero{
+    background-color:#00986f;
+    min-height:100vh;
+    width:100%;
+    color:#fff;
+    position:relative
+}
+
+nav{
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    padding:20px 8%;
+}
+
+nav .menuImage{
+    width:25px;
+    margin-right:20px;
+    cursor:pointer;
+
+}
+
+nav .logo{
+    width:160px;
+    cursor:pointer;
+}
+
+nav ul{
+    flex:1;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline;
+    list-style: none;
+    margin:0 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-weight: 600;
+}
+
+
+button{
+    background-color: #efefef;
+    height: 30px;
+    width:60px;
+    border-radius: 20px;
+    border:0;
+    outline:0;
+    cursor: pointer;
+    transition: background .9s;
+}
+
+button span{
+    display: block;
+    background: #999;
+    height:26px;
+    width:26px;
+    border-radius:50%;
+    margin-left:-2px;
+    transition: background .9, margin-left .9;
+}
+
+.lampContainer{
+    position: absolute;
+    top:0;
+    left:22%;
+    width: 200px;
+
+}
+
+.lamp{
+    width: 100%;
+    top:-20px
+}
+
+.light{
+    position:absolute;
+    top: 97%;
+    left:50%;
+    transform:transLatex(-50%);
+    width:700px;
+    margin-left: -10px;
+    opacity: 0;
+    transition: opacity 1s;
+
+
+}
+
+.textContainer{
+    max-width:600px;
+    margin-top:7%;
+    margin-left:50%;
+}
+
+.textContainer h1{
+    font-size: 80px;
+    font-weight: 400;
+
+}
+
+.textContainer a{
+    text-decoration: None;
+    background: #333;
+    padding: 15px;
+    border-radius: 30px;
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    margin-top:30px;
+}
+.control{
+    display:flex;
+    align-items:center;
+    justify-content: flex-end;
+    margin-top:150px;
+    
+}
+
+.control .line {
+    width:250px;
+    height:4px; 
+    background: #fff;
+    border-radius: 2px;
+    margin:0 20px;
+    
+}
+
+.control .line span{
+    width:50%;
+    height:8px;
+    margin-top:-2px;
+    border-radius:4px;
+    background: #00986f;
+    display:block;
+}
+
+.active{
+    background:#00986f;
+}
+
+.active span{
+    background-color: white;
+    margin-left:31px;
+}
+
+.on{
+    opacity: 1;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:#00986f;
+}
+
+a{
+    transition: color 1s;
+}
+
+
+/**content**/
+
+.wavy-text {
+    display: inline-block;
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    animation: wave 1s infinite;
+}
+
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+
+
+
+
+
+
+
+

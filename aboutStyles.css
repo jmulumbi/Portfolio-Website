@@ -1,0 +1,130 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: #00986f;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4%;
+}
+
+nav .menuImage{
+    width:25px;
+    margin-right:20px;
+    cursor:pointer;
+
+}
+
+nav .logo {
+    width: 160px;
+    cursor: pointer;
+    margin-right: 200px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.container h1 {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #00986f;
+}
+
+.container p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #00986f;
+}
+
+/* Additional styles */
+a {
+    text-decoration: none;
+    color: #00986f;
+    font-weight: 600;
+    transition: color 1s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:#00986f;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    nav {
+        padding: 20px 2%;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    container {
+        padding: 20px;
+    }
+}
+
+.profile{
+    width: 250px;
+    height: 250px;
+}
+
+/**For bounce text**/
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px); /* Bounce up */
+    }
+    60% {
+        transform: translateY(-15px); /* Bounce down */
+    }
+}
+
+.bounce-text {
+    display: inline-block;
+    animation: bounce 2s infinite; /* Use 'infinite' to keep the animation looping */
+}

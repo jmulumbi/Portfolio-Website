@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jeremiah Website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="hero">
+            <nav>
+             <img src="./images copy/menu.png" class="menuImage">
+             <img src="./images copy/logo.png" class="logo">
+             <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume &Cover Letter</a></li>
+                <li><a href="feedback.html">Feedback </a></li>
+             </ul>
+             <button type="button" onclick="turnOn()" id="btn"><span></span></button>
+            </nav>
+
+            <div class="lampContainer">
+                <img src="./images copy/lamp.png" class="lamp">
+                <img src="./images copy/light.png" class="light" id="light">
+            </div>
+
+            <div class="textContainer">
+                <h1 class="wavy-text">Jeremiah<br>Mulumbi Website</h1>
+                <p> Welcome to my personal website. Here you can find a collection of projects, more about me, my cover letter and resume, as well as give me feedback</p>
+                <a href="projects.html">Check All Projects </a>
+                <div class="control">
+                    <p>04</p>
+                    <div class="line"><span></span></div>
+                    <p>05</p>
+
+                </div>
+            </div>
+        </div>
+        <script>
+
+        var btn = document.getElementById("btn");
+        var light = document.getElementById('light');
+
+        function turnOn(){
+            btn.classList.toggle('active');
+            light.classList.toggle('on');
+
+        }
+    </script>    
+    </body>
+</html>
